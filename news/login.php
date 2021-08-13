@@ -26,17 +26,18 @@ if (isset($_POST['log'])) {
         <div class="h3 mb-3 fw-normal">Login</div>
         <form action="" method="POST" class="form-floating">
 
-            <div class="form-floating">
+            <div class="w-100 form-floating" style="margin-bottom: 10px; max-width: 500px; margin-left: 400px;">
                 <input type="text" name="username" class="form-control" id="floatingInput" placeholder="Username">
                 <label for="floatingInput">Username</label>
             </div>
 
-            <div class="form-floating">
+            <div class="w-100 form-floating" style="margin-bottom: 10px; max-width: 500px; margin-left: 400px;">
                 <input type="password" name="password" class="form-control" id="floatingInput" placeholder="Username">
                 <label for="floatingInput">Password</label>
             </div>
 
-            <input type="submit" name="log" value="Login" class="w-100 btn btn-lg btn-primary" type="submit">
+            <input type="submit" name="log" value="Login" style="margin-bottom: 10px; max-width: 500px;"
+                class="w-100 btn btn-lg btn-primary" type="submit">
         </form>
     </main>
 </body>
