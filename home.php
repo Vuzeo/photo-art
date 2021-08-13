@@ -130,19 +130,15 @@ if (!$dbcon) {
                         $time = $row['date'];
 
 
-                        echo '<div class="container"';
+                        // echo '<div class="container"';
                         echo '<div class="row mb-2">';
                         echo '<div class="col-md-6">';
                         echo '<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">';
                         echo '<div class="col p-4 d-flex flex-column position-static card bg-light">';
                         echo '<div class="col-md-8">';
-                        echo "<h3><a class='blog-post-title' href='view.php?id=$id'>$title</a></h3>";
-                    
+                        echo "<h3 class='blog-post-title'>$title</h3>";
                         echo substr($des, 0, 100);
-                    
                         echo '<p><div class="blog-post-meta"></p>';
-                        echo "<a class='btn btn-primary' href='view.php?id=$id'>Read more...</a>";
-                    
                         echo '</div> <div class="w3-text-grey">';
                         echo "$time</div>";
                         echo "</article>";

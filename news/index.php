@@ -31,7 +31,7 @@ $sql = "SELECT * FROM posts ORDER BY id DESC LIMIT $offset, $rowsperpage";
 $result = mysqli_query($dbcon, $sql);
 
 if (mysqli_num_rows($result) < 1) {
-    echo '<div class="w3-panel w3-pale-red w3-card-2 w3-border w3-round">Nothing to display</div>';
+    echo '<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">Nothing to display</div>';
 }
 while ($row = mysqli_fetch_assoc($result)) {
 
